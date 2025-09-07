@@ -1,7 +1,7 @@
 --- 
 layout: page
 title: "first page"
-permalink: / /
+permalink: /index/
 ---
 # 首页
 ## goal
