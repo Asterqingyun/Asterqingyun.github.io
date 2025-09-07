@@ -1,3 +1,8 @@
+- - - 
+layout: page
+title: "first page"
+permalink: /index/
+- - -
 # 首页
 ## goal
 just to try to build a page
