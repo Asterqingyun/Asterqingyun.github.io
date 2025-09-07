@@ -8,3 +8,5 @@ permalink: /index/
 just to try to build a page
 ## introduction
 小白一枚，真的很小白
+## navigation
+(/files/1.py) <-这个是我的一个试验文件
