@@ -9,4 +9,4 @@ just to try to build a page
 ## introduction
 小白一枚，真的很小白
 ## navigation
-[trial file] (files/1.py)
+[trial file](files/1.py)
