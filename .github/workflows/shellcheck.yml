@@ -1,0 +1,10 @@
+on:[commit]
+name:shellcheck
+jobs:
+  shellchecks:
+    runs-on:Ubuntu-latest
+    steps:
+      run: shellcheck *.sh
+           if [ $? -ne 0 ] ; then
+              echo "something is wrong here"
+      
