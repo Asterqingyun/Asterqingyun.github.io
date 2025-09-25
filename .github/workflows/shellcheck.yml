@@ -1,10 +1,20 @@
-on:[commit]
+on:[push,pull-request]
 name:shellcheck
 jobs:
-  shellchecks:
-    runs-on:Ubuntu-latest
+  install:
+    name: install
+    runs-on: ubuntu-latest
     steps:
-      run: shellcheck *.sh
-           if [ $? -ne 0 ] ; then
-              echo "something is wrong here"
+      run: sudo apt get shellcheck
+  shellchecks:
+    name: shellcheck
+    runs-on: ubuntu-latest
+    steps:
+      run: 
+      shellcheck *.sh
+      if [ $? -ne 0 ] ; then
+          echo "something is wrong here"
+          exit 1
+      fi
+              
       
