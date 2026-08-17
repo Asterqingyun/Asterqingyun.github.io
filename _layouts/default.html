@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <style>
+    /* ===== 北欧蓝配色变量 ===== */
+    :root {
+      --blue: #2F80ED;          /* 主蓝 */
+      --blue-dark: #1f4e8c;     /* 深蓝（标题色） */
+      --blue-light: #eaf2fc;    /* 浅蓝（卡片底色） */
+      --blue-bg: #f5f9ff;       /* 页面背景 */
+      --blue-text: #1f3a5f;     /* 正文深蓝灰 */
+      --blue-muted: #7d95b8;    /* 次要文字 */
+      --line: #d6e4f5;          /* 边框浅蓝 */
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--blue-bg);
+      color: var(--blue-text);
+      max-width: 720px;         /* 居中窄栏，制造留白 */
+      margin: 56px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+    }
+
+    h1 { font-size: 2.4em; margin: 0.5em 0 0.2em; }
+    h2 { font-size: 1.35em; margin: 2.6em 0 0.8em; color: var(--blue-dark); }
+
+    /* ===== 文字框（卡片） ===== */
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--blue);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      box-shadow: 0 2px 8px rgba(47, 128, 237, 0.06);
+    }
+
+    a { color: var(--blue); }
+
+    /* ===== 表格（荣誉奖项） ===== */
+    table {
+      border-collapse: collapse;
+      margin: 18px auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(47, 128, 237, 0.06);
+    }
+    th, td { border: 1px solid var(--line); padding: 8px 18px; }
+    th { background: var(--blue-light); }
+
+    /* ===== 折叠卡片 ===== */
+    details {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 16px;
+      margin: 18px 0;
+    }
+    summary { cursor: pointer; color: var(--blue-dark); font-weight: bold; }
+
+    img { max-width: 100%; }
+
+    footer {
+      text-align: center;
+      color: var(--blue-muted);
+      margin-top: 64px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+  <footer>❄ ✦ ❄ ✦ ❄<br>© 2026 Tang Jing · UCAS · Made with 💙</footer>
+</body>
+</html>
