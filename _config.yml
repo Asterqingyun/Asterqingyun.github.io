@@ -1,3 +1,13 @@
-title: My_learning_website
-description: just to learn
-theme: jekyll-theme-architect
+# ============================================================
+# 网站全局设置 —— 注意：Jekyll 只认带下划线的 _config.yml！
+# 普通的 config.yml 会被直接无视，这是最常踩的坑。
+# ============================================================
+
+title: Tang Jing · Personal Homepage
+description: CS Undergrad at UCAS · Exploring Recommendation Simulation
+lang: en
+
+# 说明：
+# - 这里不写 theme:，因为我们在 _layouts/default.html 里
+#   自定义了整站外观（北欧蓝），自定义 layout 会优先于主题。
+# - title 会显示在浏览器标签页上，也会被搜索引擎收录。
